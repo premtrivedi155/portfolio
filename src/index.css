@@ -2,5 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-top-left {
+    align-items: flex-start; /* Align items to the start (top) */
+  }
+
+  .padding-top-200 {
+    padding-top: 175px;
+  }
+
 
   

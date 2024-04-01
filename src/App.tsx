@@ -4,6 +4,8 @@ import FloatingNav from './components/Navbar';
 import './style.css';
 import LavaLampBackground from './components/LavaLampBackground'; // Import LavaLampBackground component
 
+
+
 function App() {
   const navItems = [
     { name: 'Home', link: '/' },
