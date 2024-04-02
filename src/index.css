@@ -11,4 +11,80 @@
   }
 
 
+
+
+  
+  
+  
+  .card-hello-right-content {
+    position: relative; /* Position content absolutely */
+    top: -80px; /* Align content to the top */
+    left: 0; /* Align content to the left */
+    width: 100%; /* Take full width of the container */
+    height: 100%; /* Take full height of the container */
+    overflow: hidden; /* Hide overflow */
+  }
+
+
+
+.card-hello-right-circle {
+    animation: cardHelloRightCircleScale 6s ease infinite;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
+
+.card-hello-right-circle:nth-child(1) {
+    animation-delay: .2s;
+    height: 400px;
+    width: 400px;
+    z-index: 4;
+}
+
+.card-hello-right-circle:nth-child(2) {
+    animation-delay: .4s;
+    height: 480px;
+    width: 480px;
+    z-index: 3;
+    opacity: .3;
+}
+
+.card-hello-right-circle:nth-child(3) {
+    animation-delay: .6s;
+    height: 560px;
+    width: 560px;
+    z-index: 2;
+    opacity: .225;
+}
+
+.card-hello-right-circle:nth-child(4) {
+    animation-delay: .8s;
+    height: 640px;
+    width: 640px;
+    z-index: 1;
+    opacity: .15;
+}
+
+.card-hello-right-circle:nth-child(5) {
+    animation-delay: 1s;
+    height: 720px;
+    width: 720px;
+    z-index: 0;
+    opacity: .075;
+}
+
+@keyframes cardHelloRightCircleScale {
+    0%, 30%, to {
+        transform: translate(-50%, 50%) scale(1);
+    }
+
+    15% {
+        transform: translate(-50%, 50%) scale(.95);
+    }
+}
+
+
   

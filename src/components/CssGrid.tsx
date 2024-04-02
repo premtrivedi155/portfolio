@@ -23,8 +23,15 @@ const CssGrid: React.FC = () => {
       </div>
 
       {/* Second Compartment */}
-      <div className={`${boxStyle} md:col-span-1 lg:col-span-2 lg:row-span-5 shadow-xl `}>
-        <img src="../../public/hello.png" alt="Image" className="h-full w-full object-cover" />
+      <div className={`border-2 rounded-xl  flex flex-col md:col-span-1 lg:col-span-2 lg:row-span-5 shadow-xl relative bg-gray-200`}>
+        <div className="card-hello-right-content" style={{ transition: 'transform 450ms ease 0s', transform: 'translateY(80px)' }}>
+          <div className="card-hello-right-circles">
+            {[0, 1, 2, 3, 4].map((key) => (
+              <div key={key} className="card-hello-right-circle"></div>
+            ))}
+          </div>
+          
+        </div>
       </div>
 
       <div className={`${boxStyle} md:col-span-2 lg:col-span-6 lg:row-span-1 shadow-xl flex flex-col items-center justify-center`}>
@@ -32,8 +39,15 @@ const CssGrid: React.FC = () => {
         
       </div>
 
-      <div className={`${boxStyle} md:col-span-2 lg:col-span-3 lg:row-span-6 shadow-xl flex flex-col items-center justify-center`}>
-        <h2 className='text-xl font-semibold mb-2'>About Me</h2>
+      <div className={`border-2 rounded-xl  flex flex-col md:col-span-2 lg:col-span-3 lg:row-span-6 shadow-xl relative bg-gray-200`}>
+      <div className="card-hello-right-content" style={{ transition: 'transform 450ms ease 0s', transform: 'translateY(80px)' }}>
+          <div className="card-hello-right-circles">
+            {[0, 1, 2, 3, 4].map((key) => (
+              <div key={key} className="card-hello-right-circle"></div>
+            ))}
+          </div>
+          
+        </div>
         
       </div>
 
