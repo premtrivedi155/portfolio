@@ -16,14 +16,13 @@ const LavaLampBackground: React.FC = () => {
     return (
         <div className="lamp">
             <div className="lava">
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
-                <div className={`blob ${isWobble ? 'wobble' : ''}`} onClick={handleClick}></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
+            <div className='blob'></div>
             </div>
         </div>
     );

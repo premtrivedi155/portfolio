@@ -31,7 +31,9 @@ const Typewriter: React.FC<{ texts: string[] }> = ({ texts }) => {
   }, [index, text, isDeleting, texts, speed, loopCount]);
 
   return (
-    <h1 className="text-8xl font-bold">{text}</h1>
+    <div style={{ fontSize: '101.659224768px' }}>
+      <h1 className="font-bold">{text}</h1>
+    </div>
   );
 };
 

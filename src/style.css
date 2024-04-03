@@ -17,7 +17,7 @@ body {
 
 .blob {
     border-radius: 50%;
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #66b2ff; /* Light grey background */
     position: absolute;
     z-index: -1;
     filter: blur(10px); /* Blur effect */

@@ -1,21 +1,27 @@
+@import url('./fonts.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-bg-color {
+    background-color: #103783;
+  }
+
+  .padding-top-150 {
+    padding-top: 100px;
+  }
+  
+
 
 .custom-top-left {
     align-items: flex-start; /* Align items to the start (top) */
   }
 
-  .padding-top-200 {
-    padding-top: 175px;
-  }
-
-
-
-
   
-  
-  
+
+
   .card-hello-right-content {
     position: relative; /* Position content absolutely */
     top: -80px; /* Align content to the top */
