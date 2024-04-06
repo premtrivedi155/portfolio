@@ -31,6 +31,8 @@
     overflow: hidden; /* Hide overflow */
   }
 
+ 
+
 
 
 .card-hello-right-circle {
@@ -93,4 +95,190 @@
 }
 
 
+.card-hello-left {
+    position: absolute; /* Position content absolutely */
+    bottom:415px; /* Align content to the top */
+    left: 0; /* Align content to the left */
+    width: 100%; /* Take full width of the container */
+    height: 100%; /* Take full height of the container */
+     /* Hide overflow */
+  }
+
+  .card-hello-left-circle {
+    animation: cardHelloRightCircleScale 6s ease infinite;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
+
+.card-hello-left-circle:nth-child(1) {
+    animation-delay: .2s;
+    height: 300px;
+    width: 300px;
+    z-index: 4;
+}
+
+.card-hello-left-circle:nth-child(2) {
+    animation-delay: .4s;
+    height: 380px;
+    width: 380px;
+    z-index: 3;
+    opacity: .3;
+}
+
+.card-hello-left-circle:nth-child(3) {
+    animation-delay: .6s;
+    height: 460px;
+    width: 460px;
+    z-index: 2;
+    opacity: .225;
+}
+
+.card-hello-left-circle:nth-child(4) {
+    animation-delay: .8s;
+    height: 540px;
+    width: 540px;
+    z-index: 1;
+    opacity: .15;
+}
+
+.card-hello-left-circle:nth-child(5) {
+    animation-delay: 1s;
+    height: 620px;
+    width: 620px;
+    z-index: 0;
+    opacity: .075;
+}
+
+
+/* Define styles for the card-skills container */
+.card-skills {
+    --tree-size-multiplier: 1;
+    align-items: center;
+    display: flex;
+    padding: 55px;
+  }
+  
+  /* Apply gradient background to the card-skills container */
+  .card-skills:before {
+    background: linear-gradient(18.48deg,rgba(255,255,255,.15) 2.76%,rgba(255,255,255,.05) 17.23%),linear-gradient(200.6deg,rgba(255,255,255,.15) 4.13%,rgba(255,255,255,.05) 20.54%);
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  /* Style the background image within the card-skills container */
+  .card-skills-background {
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Define styles for the text content within the card-skills container */
+  .card-skills-text {
+    max-width: 260px;
+  }
+  
+  /* Style the subtitle within the card-skills container */
+  .card-skills-subtitle {
+    margin-bottom: 14px;
+  }
+  
+  /* Style the title within the card-skills container */
+  .card-skills-title {
+    font-size: 32px;
+    margin-bottom: 26px;
+  }
+  
+  /* Style the description within the card-skills container */
+  .card-skills-description {
+    font-size: 20px;
+    line-height: 28px;
+    opacity: .5;
+  }
+  
+  /* Define styles for the card-skills tree */
+  .card-skills-tree {
+    height: 386px;
+    -webkit-mask-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 17.39%,#fff 85.24%,rgba(255,255,255,0) 100%);
+    mask-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 17.39%,#fff 85.24%,rgba(255,255,255,0) 100%);
+    overflow: hidden;
+    position: absolute;
+    right: -100px;
+    width: 752px;
+  }
+  
+  /* Define styles for the inner content of the card-skills tree */
+  .card-skills-tree-inner {
+    display: flex;
+    transform: rotate(15deg);
+  }
+  
+  /* Define styles for each row within the card-skills tree */
+  .card-skills-tree-row {
+    height: calc(1791.19px * var(--tree-size-multiplier));
+    position: relative;
+    transition: ease transform;
+    width: calc(72px * var(--tree-size-multiplier));
+  }
+  
+  /* Define styles for non-last rows within the card-skills tree */
+  .card-skills-tree-row:not(:last-child) {
+    margin-right: calc(20px * var(--tree-size-multiplier));
+  }
+  
+  /* Define styles for specific rows within the card-skills tree */
+  .card-skills-tree-row:nth-child(1) {
+    top: calc(25px * var(--tree-size-multiplier));
+    transform: translateY(calc((-100% + 438px) * var(--tree-size-multiplier)));
+  }
+  
+  .card-skills-tree-row:nth-child(2) {
+    top: calc(-286px * var(--tree-size-multiplier));
+    transform: translateY(calc((-100% + 1040px) * var(--tree-size-multiplier)));
+  }
+  
+  .card-skills-tree-row:nth-child(3) {
+    top: calc((569px + 25px) * -1 * var(--tree-size-multiplier));
+    transform: translateY(calc(-150px * var(--tree-size-multiplier)));
+    transition-duration: 1s;
+  }
+  
+  .card-skills-tree-row:nth-child(4) {
+    top: calc(-1017px * var(--tree-size-multiplier));
+    transform: translateY(calc((100% - 1080px) * var(--tree-size-multiplier)));
+  }
+  
+  .card-skills-tree-row:nth-child(5) {
+    top: calc(-1439px * var(--tree-size-multiplier));
+    transform: translateY(calc((100% - 206px) * var(--tree-size-multiplier)));
+  }
+  
+  .card-skills-tree-row:nth-child(1), .card-skills-tree-row:nth-child(5) {
+    transition-duration: 3s;
+  }
+  
+  .card-skills-tree-row:nth-child(2), .card-skills-tree-row:nth-child(4) {
+    transition-duration: 2s;
+  }
+  
+  /* Ensure the card-skills tree rows are visible when in view */
+  .card-skills-in-view .card-skills-tree-row {
+    transform: translate(0);
+  }
+  
   

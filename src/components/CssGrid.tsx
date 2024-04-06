@@ -44,11 +44,11 @@ const CssGrid: React.FC = () => {
       </div>
 
        {/* fourth Compartment */}        
-      <div className={`border-2 rounded-xl  flex flex-col md:col-span-2 lg:col-span-3 lg:row-span-6 shadow-xl relative bg-gray-200`}>
-      <div className="card-hello-right-content" style={{ transition: 'transform 450ms ease 0s', transform: 'translateY(80px)' }}>
-          <div className="card-hello-right-circles">
+      <div className={`border-2 rounded-xl  flex flex-col md:col-span-2 lg:col-span-3 lg:row-span-6 shadow-xl relative custom-bg-color`}>
+      <div className="card-hello-left" style={{ transition: 'transform 450ms ease 0s', transform: 'translateY(80px)' }}>
+          <div className="card-hello-left-circles">
             {[0, 1, 2, 3, 4].map((key) => (
-              <div key={key} className="card-hello-right-circle"></div>
+              <div key={key} className="card-hello-left-circle"></div>
             ))}
           </div>
           
@@ -114,9 +114,21 @@ const CssGrid: React.FC = () => {
       </div>
 
        {/* twelwth Compartment */}        
-      <div className={`${boxStyle} md:col-span-2 lg:col-span-4 lg:row-span-4 shadow-xl flex flex-col items-center justify-center`}>
-        <h2 className='text-xl font-semibold mb-2'>About Me</h2>
-        <p className='text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <div className={`${boxStyle} md:col-span-2 lg:col-span-4 lg:row-span-4 shadow-xl flex flex-col items-center justify-center`}>
+        {/* HTML structure for the twelfth compartment */}
+        <div id="skills" className="card-skills card-skills-in-view">
+          <div className="card-skills-text">
+            <div className="card-skills-subtitle">I constantly try to improve myself</div>
+            <div className="card-skills-title">Currently, I am learning GoLang.</div>
+            <div className="card-skills-description">I am also learning TypeScript via my open source repos. Other than that, I also constantly practice web design.</div>
+          </div>
+         
+          <div className="card-skills-tree">
+            <div className="card-skills-tree-inner">
+            <img src="./public/card-skills-tree-row.png" alt="Card Skills Tree Row" className="lazy-image card-skills-tree-row lazy-image-loaded" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
