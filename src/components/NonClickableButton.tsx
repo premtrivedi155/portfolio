@@ -8,7 +8,7 @@ const NonClickableButton: React.FC<NonClickableButtonProps> = ({ text }) => {
   return (
     <button 
       style={{ 
-        backgroundColor: '#103783',
+        backgroundColor: '	#ffa92b',
         borderRadius: '38.832px',
         border: 'none',
         color: 'white',

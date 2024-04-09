@@ -7,17 +7,13 @@ import LavaLampBackground from './components/LavaLampBackground'; // Import Lava
 
 
 function App() {
-  const navItems = [
-    { name: 'Home', link: '/' },
-    { name: 'About', link: '/about' },
-    { name: 'Contact', link: '/contact' }
-  ];
+  
 
   return (
     
       <div>
          <LavaLampBackground />
-        <FloatingNav navItems={navItems} />
+        <FloatingNav />
        
         <div className='max-w-7xl mx-auto'>
           <CssGrid />
