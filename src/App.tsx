@@ -1,4 +1,4 @@
-import React from 'react';
+
 import CssGrid from './components/CssGrid';
 import FloatingNav from './components/Navbar';
 import './style.css';

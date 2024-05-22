@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
 const FloatingNav = ({
@@ -21,7 +21,7 @@ const FloatingNav = ({
       <div className="flex items-center space-x-2">
         {/* Add space for favicon */}
         <img
-          src="./public/pt.png"
+          src="/pt.png"
           alt="Favicon"
           className="w-8 h-8 rounded-full"
         />
@@ -48,7 +48,8 @@ const FloatingNav = ({
         </button>
         {/* Resume button */}
         <a
-          href="/resume"
+          href="https://drive.google.com/file/d/1kYEcZERteLbOmj4i7Y0_5-relzQYnIxQ/view?usp=sharing"
+          target="_blank"
           className={`border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full ${className}`}
         >
           <span>Resume</span>
